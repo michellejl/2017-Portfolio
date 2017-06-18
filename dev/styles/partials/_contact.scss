@@ -1,0 +1,27 @@
+#contact {
+  margin: 50px 0;
+  h2 {
+  text-align: center;
+  padding: 50px 0;
+  }
+  ul#social {
+    width: 50%;
+    li {
+      padding: 10px 0;
+      i {
+        padding-right: 10px;
+        font-size: 1.3em;
+      }
+      a {
+        border: none;
+        &:hover {
+          background: transparent;
+          color: #000;
+        }
+      }
+    }
+  }
+  .right {
+    width: 50%;
+  }
+}

@@ -1,0 +1,87 @@
+aside#sidebar {
+  background: $dark_gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 0;
+
+  img.logo {
+    max-width: 250px;
+    padding: 15px;
+  }
+
+  ul {
+
+    a {
+      color: $silver;
+
+      li {
+        background-size: 200% 200% !important;
+        background-position: right;
+        padding: 15px 0;
+        margin: 10px 0;
+        text-align: center;
+
+      }
+
+      &:nth-of-type(1) li { background: linear-gradient(90deg, $dark_gray 55%, $first); }
+      &:nth-of-type(2) li { background: linear-gradient(90deg, $dark_gray 55%, $second); }
+      &:nth-of-type(3) li { background: linear-gradient(90deg, $dark_gray 55%, $third); }
+      &:nth-of-type(4) li { background: linear-gradient(90deg, $dark_gray 55%, $fourth); }
+      &:nth-of-type(5) li { background: linear-gradient(90deg, $dark_gray 55%, $fifth); }
+
+      li:hover {
+          background-position: right;
+          transition: 0.4s;
+        }
+
+    }
+
+  }
+
+}
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0,0,0,0);
+
+  &:checked {
+    + label {
+      left: 260px;
+    }
+    ~ #wrapper {
+      left: 250px;
+    }
+  }
+
+  + label {
+    transition: left 0.8s;
+  }
+
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  cursor: pointer;
+  background: #fff;
+  padding: 5px;
+  color: $color;
+  border: 1px solid $color;
+  border-radius: 5px;
+
+  @media (max-width: 900px) {border: none; }
+
+  &::after {
+    content: 'Menu';
+    @media (max-width: 900px) { content: none; }
+  }
+  i {
+    margin-right: 10px;
+  }
+
+}

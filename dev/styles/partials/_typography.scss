@@ -1,0 +1,44 @@
+$headers: 'Roboto Slab';
+$body: 'Roboto';
+$accent: 'Rokkitt';
+* {
+  font-family: $body;
+}
+
+a {
+  text-decoration: none;
+  color: $color;
+  background: linear-gradient(white 50%, $color 50%);
+  background-size: 100% 200%;
+  background-position: top;
+
+  &:hover {
+    color: #fff;
+    background-position: bottom;
+    transition: 0.5s ;
+  }
+}
+
+#main a {
+  border-bottom: 2px solid $color;
+  color: #000;
+  padding: 0 3px;
+  &:hover { color: #fff; }
+}
+
+p {
+  &.intro-center {
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+  }
+  &.center {
+    text-align: center;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headers;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,57 @@
+form#contact {
+  width: 100%;
+  padding: 30px 30px 15px 30px;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+
+    > span {
+      display: inline-block;
+      width: 15%;
+      
+      @media (max-width: 775px) { 
+        display: block; 
+        margin-bottom: 10px;
+      }
+
+    }
+
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed $color;
+    width: 85%;
+    outline: none;
+    padding: 0;
+    font-style: italic;
+
+    &:focus {
+      border-color: #83a4c5;
+    }
+
+  }
+
+  textarea {
+    border: 1px dashed $color;
+    resize: none;
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  input[type=submit],
+  input[type=button] {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: 1px solid $color;
+    padding: 14px 18px;
+    color: $color;
+    border-radius: 5px;
+  }
+
+}
