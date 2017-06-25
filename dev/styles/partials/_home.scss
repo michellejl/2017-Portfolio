@@ -5,7 +5,9 @@
 }
 #home,
 #basic-info,
-#volunteer {
+#volunteer,
+#conference,
+#portfolio {
   padding: 50px 0;
   h1 {
     text-align: center;
@@ -13,7 +15,7 @@
   }
 }
 
-#left {
+.left {
   flex: 2 1 65%;
   padding: 0 25px 0 0;
   position: relative;
@@ -39,28 +41,9 @@
     text-align: justify;
   }
 
-  a.btn.cta {
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 10px;
-    border: 2px solid $color;
-    color: $color;
-    background: transparent;
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    text-align: center;
-
-    &:hover {
-      background: $color;
-      color: #fff;
-    }
-
-  }
-
 }
 
-#right {
+.right {
   flex: 1 1 35%;
   background-size: cover;
   background-position: right center;
@@ -73,6 +56,15 @@
     margin: 50px auto 0;
   }
 
+}
+
+
+img + p.small {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  font-size: .8em;
+  text-align: center;
 }
 
 
@@ -111,6 +103,45 @@
   .image { padding-left: 15px;}
 }
 
+#conference {
+  ul.big-events-list {
+    li {
+      display: inline-block;
+      flex: 1 1 50%;
+      padding: 10px 0;
+
+      @media (max-width: 775px) { flex: 1 1 100%; }
+      &.conference {
+        &:before {
+          font-family: FontAwesome;
+          content: '\f0c0';
+          width: 25px;
+          display: inline-block;
+        }
+      }
+      &.hackathon {
+        &:before {
+          font-family: FontAwesome;
+          content: '\f121';
+          width: 25px;
+          display: inline-block;
+        }
+      }
+      span {
+        &.title {
+          font-weight: bold;
+        }
+        &.date,
+        &.location {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+
 .image {
   width: 40%;
   @media (max-width: 775px) {
@@ -124,3 +155,4 @@
   width: 60%;
   @media (max-width: 775px) { width: 100%; order: 1;}
 }
+

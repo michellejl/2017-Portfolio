@@ -1,0 +1,28 @@
+#portfolio {
+  #projects {
+    .project {
+      border-bottom: 1px solid #000000;
+      margin-bottom: 50px;
+      padding-bottom: 25px;
+      &:last-child {
+        border: none;
+      }
+      h2.title {
+        text-align: center;
+        padding: 0 0 10px;
+      }
+      ul.tools {
+        li {
+          display: inline-block;
+          &:after {
+            content: ', ';
+            padding-right: 5px;
+          }
+          &:last-child:after {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}

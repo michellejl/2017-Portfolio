@@ -5,6 +5,8 @@ $accent: 'Rokkitt';
   font-family: $body;
 }
 
+
+
 a {
   text-decoration: none;
   color: $color;
@@ -17,14 +19,35 @@ a {
     background-position: bottom;
     transition: 0.5s ;
   }
+
 }
 
 #main a {
   border-bottom: 2px solid $color;
   color: #000;
   padding: 0 3px;
+
   &:hover { color: #fff; }
+
+  &.btn.cta {
+    padding       : 15px 30px;
+    font-size     : 1.2em;
+    border-radius : 10px;
+    border        : 2px solid $color;
+    color         : $color;
+    background    : transparent;
+    display       : block;
+    margin        : 0 auto;
+    width         : 200px;
+    text-align    : center;
+
+    &:hover {
+      background : $color;
+      color      : #FFFFFF;
+    }
+  }
 }
+
 
 p {
   &.intro-center {

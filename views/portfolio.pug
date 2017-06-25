@@ -1,3 +1,87 @@
 extends layout
 
 block content
+  #portfolio
+    #projects.flex
+      .project
+        h2.title Simple Photo Gallery with ES6 and Flexbox
+        img(src="images/portfolio/simplePhotoGallery.png")
+        p.description Fairly simple site built as an excuse to play with a few of the things I am learning in ES6 to see how to apply them. Also used flexbox just because. Uses the unsplash API to pull in the images.
+        p
+          a.btn(href="https://codepen.io/michellejl/full/ybvbNX/" target="_blank") CodePen Demo
+        ul.tools
+          li HTML
+          li SCSS
+          li JavaScript
+          li ES6
+      .project
+        h2.title Girl Friend Factor
+        img(src="images/portfolio/gff.png")
+        p.description Freelance project for a non-profit. They had an older site that wasn't maintainable anymore. It also was not mobile friendly, and looked out-dated. I suggested a move to WordPress as an easy system for them to be able to manage their own content and then set about designing and building the site. Following launch of this project, I spent time training board members on how to actually use the new site. I continue to perform maintenance and other updates.
+        p
+          a.btn(href="http://girlfriendfactor.org/" target="_blank") Live Site
+        ul.tools
+          li HTML
+          li CSS
+          li WordPress
+          li Design
+          li Training
+      .project
+        h2.title Simple Game
+        img(src="images/portfolio/simple-game.png")
+        p.description A simple game created with JavaScript on an HTML5 canvas element. This project required me to really spend some time wrapping my head around object-oriented-programming. I definitely feel I gained a much better understanding of the concept through building this project.
+        p
+          a.btn(href="https://codepen.io/michellejl/full/NxVOOw" target="_blank") CodePen
+        ul.tools
+          li HTML
+          li CSS
+          li JavaScript
+          li jQuery
+          li Object Oriented Programming
+      .project
+        h2.title Three Wooden Pigeons - Photography Portfolio
+        img(src="images/portfolio/twp.png")
+        p.description Photography based portfolio website to display the results of my own photography habit. I am using a flickr API to pull in my images from there, rather than hosting the images directly on WordPress.
+        p
+          a.btn(href="http://threewoodenpigeons.com/" target="_blank") Live Site
+        ul.tools
+          li HTML
+          li CSS
+          li WordPress
+          li Photography
+      .project
+        h2.title Wikipedia Viewer
+        img(src="images/portfolio/wikipedia-viewer.png")
+        p.description Project built using the wikipedia API. This project allows a user to search Wikipedia entries in a search box and see the resulting Wikipedia entries, and also to click a button to see a random Wikipedia entry.
+        p
+          a.btn(href="https://codepen.io/michellejl/full/xVMZKw" target="_blank") CodePen
+        ul.tools
+          li Bootstrap
+          li HTML
+          li CSS
+          li JavaScript
+          li jQuery
+          li API
+      .project
+        h2.title Random Quote Generator
+        img(src="images/portfolio/quote-generator.png")
+        p.description Project built using an API to pull in quotes. This project allows a user to click a button to show me a new random quote. The user can also press a button to tweet out a quote.
+        p
+          a.btn(href="https://codepen.io/michellejl/full/XdxEZX" target="_blank") CodePen
+        ul.tools
+          li HTML
+          li SCSS
+          li JavaScript
+          li jQuery
+          li API
+      .project
+        h2.title Old Portfolio Site
+        img(src="images/portfolio/old-portfolio.png")
+        p.description (NOTE: Several links on this site are broken and information is old!) This is a static website I created to use as a portfolio site for a while. Eventually moved on to another site because I got tired of having to update the code everytime I wanted to add a new project. Visually, I liked the site, but I understand where it wasn't very effective as a web development portfolio. I enjoyed the proess of building this project and I learnt quite a bit. It was my first time using a framework to build a site. I used Foundation for this (similar to the more popular Bootstrap), and I had some fun playing with animation libraries to do silly little things throughout the site.
+        p
+          a.btn(href="http://michellejl.github.io/portfolio_june_2015/" target="_blank") Demo
+        ul.tools
+          li HTML
+          li CSS
+          li Zerb Foundation
+          li Animate.css

@@ -2,14 +2,14 @@ extends layout
 
 block content
   #home.flex
-    #left
+    .left
       h1.heading Hi, I'm Michelle: <br />Software Engineer
       p 
         | Hello World! I’m Michelle, a web developer and software engineer currently residing in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. When not coding, I am most likely spending my time on some sort of creative project, or exploring the world around me with my trusty 
         a(href="http://www.nikonusa.com/en/nikon-products/product-archive/dslr-cameras/d300.html" target="_blank") Nikon
         |  camera.
       a(href="/portfolio").btn.cta View Projects
-    #right(style='background-image: url("images/me.jpg");')
+    .right(style='background-image: url("images/me.jpg");')
   hr 
   #basic-info
     h1 Basic Facts
@@ -86,3 +86,80 @@ block content
           |  and I will see what I can do! 
       .image
         img(src="/images/me_wwc.jpg")
+  hr
+  #conference
+    h1 Conferences and Hackathons I've Attended
+    ul.big-events-list
+      li.year
+        h2 2017
+        ul.flex
+          li.conference
+            span.title Indie Web Summit
+            span.date June 24-25, 2017
+            span.location Portland, Oregon
+          li.conference
+            span.title Open Source Bridge
+            span.date June 20-22, 2017
+            span.location Portland, Oregon
+          li.conference
+            span.title ACT-W
+            span.date June 16-17, 2017
+            span.location Portland, Oregon
+          li.conference
+            span.title Developer Week
+            span.date February 13-15, 2017
+            span.location Pier 27 in San Fransisco, California
+          li.hackathon
+            span.title Developer Week Hackathon
+            span.date February 11-12, 2017
+            span.location Galvanize in San Francisco, California
+          li.hackathon
+            span.title Hack the Dot
+            span.date February 9, 2017
+            span.location Vacasa in Portland, Oregon
+      li.year
+        h2 2016
+        ul.flex
+          li.hackathon
+            span.title IoT Hackathon - Women Who Code
+            span.date December 2-4, 2016
+            span.location Simple in Portland, Oregon
+          li.hackathon
+            span.title We Code Women's Hackathon
+            span.date November 4-5, 2016
+            span.location Puppet in Portland, Oregon
+          li.conference
+            span.title Open Source Bridge
+            span.date June 21-24, 2016
+            span.location Eliot Center in Portland, Oregon
+          li.conference
+            span.title NodePDX
+            span.date June 19-21, 2016
+            span.location Bossanova Ballroom in Portland, Oregon
+      li.year
+        h2 2015
+        ul.flex
+          li.hackathon
+            span.title HackPDX
+            span.date December 5, 2015
+            span.location airbnb in Portland, Oregon
+          li.hackathon
+            span.title Hack the Dot
+            span.date November 12, 2015
+            span.location QuickLeft in Portland, Oregon
+          li.conference
+            span.title Wordcamp
+            span.date October 24, 2015
+            span.location Eliot Center in Portland, Oregon
+          li.hackathon
+            span.title We Code Women's Hackathon
+            span.date July 24-25, 2015
+            span.location Puppet Labs in Portland, Oregon
+
+
+
+
+
+
+
+
