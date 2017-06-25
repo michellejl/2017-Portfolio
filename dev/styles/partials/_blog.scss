@@ -1,0 +1,48 @@
+#blog-list {
+  article {
+    border-bottom: 1px solid black;
+    padding: 25px 0;
+    &:last-child {
+      border: none;
+    }
+    ul.tags {
+      li {
+        display: inline-block;
+        &:after {
+          content: ', ';
+          padding-right: 5px;
+        }
+        &:last-child:after {
+          content: '';
+        }
+      }
+    }
+    h2 {
+      padding: 0 0 15px;
+    }
+    p.desc {
+      padding: 0;
+      margin: 0;
+    }
+    .left {
+      flex: 1 1 35%
+    }
+    .right {
+      flex: 1 1 65%;
+    }
+  }
+}
+
+#post {
+  header {
+    margin-top: 25px;
+    border-bottom: 1px solid black;
+    h1 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    span.author {
+      display:none;
+    }
+  }
+}
