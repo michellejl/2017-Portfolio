@@ -1,0 +1,17 @@
+form(method="post" action="contact/send" id="contact")
+  .form-group
+    label
+      span Name:
+      input.form-control(type="text" name="name" placeholder="Enter name" required)
+  .form-group
+    label
+      span  Email:
+      input.form-control(type="email" name="email" placeholder="Enter email" required)
+  .form-group
+    label
+      span  Message:
+      textarea.form-control(name="message" placeholder="Enter message" required)
+  .form-group
+    label
+      span
+      input(type="submit" value="Send Note")

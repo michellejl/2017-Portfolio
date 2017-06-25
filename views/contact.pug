@@ -8,54 +8,11 @@ block content
         | Send me a message 
         i.fa.fa-paper-plane-o(aria-hidden="true") 
         |  about anything or come find me on social media. 
-      form(method="post" action="contact/send" id="contact")
-        .form-group
-          label 
-            span Name:
-            input.form-control(type="text" name="name" placeholder="Enter name" required)
-        .form-group
-          label 
-            span  Email:
-            input.form-control(type="email" name="email" placeholder="Enter email" required)
-        .form-group
-          label 
-            span  Message:
-            textarea.form-control(name="message" placeholder="Enter message" required)
-        .form-group
-          label
-            span
-            input(type="submit" value="Send Note")
+      include partials/form
     hr
     h2 Find me Online
     .flex
       ul#social
-        li
-          a(href='#')
-            i.fa.fa-twitter
-            span.label Twitter: @MichelleJLevine
-        li
-          a(href='#')
-            i.fa.fa-instagram
-            span.label Instagram: @SpaceCadetMJ
-        li
-          a(href='#')
-            i.fa.fa-github
-            span.label Github: @MichelleJL
-        li
-          a(href='#')
-            i.fa.fa-codepen
-            span.label CodePen: @MichelleJL
-        li
-          a(href='#')
-            i.fa.fa-linkedin
-            span.label LinkedIn /michellejl
-        li
-          a(href='#')
-            i.fa.fa-medium
-            span.label Medium
-        li
-          a(href="#")
-            i.fa.fa-envelope-o
-            span.label Email: Michelle@MichelleJL.com
+        include partials/social
       .right 
         img(src="/images/me_jackson.jpg").contactMe

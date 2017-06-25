@@ -29,7 +29,7 @@
     font-size: 3em;
     line-height: .8em;
     font-family: $accent;
-    text-align: left;
+    text-align: left !important;
 
     @media (max-width: 500px) { font-size: 2.5em; }
     @media (max-width: 400px) { font-size: 2em; }

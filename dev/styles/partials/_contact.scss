@@ -8,15 +8,15 @@
     width: 50%;
     li {
       padding: 10px 0;
-      i {
-        padding-right: 10px;
-        font-size: 1.3em;
-      }
       a {
         border: none;
+        font-size: 1.3em;
         &:hover {
           background: transparent;
           color: #000;
+        }
+        span.label {
+          padding-left: 10px;
         }
       }
     }

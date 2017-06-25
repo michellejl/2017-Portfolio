@@ -13,6 +13,8 @@ a {
     color: #fff;
     background-position: bottom;
     transition: 0.5s; }
+  a.icon {
+    font-family: fontAwesome; }
 
 #main a {
   border-bottom: 2px solid #950147;
@@ -106,7 +108,6 @@ header#header {
       display: inline-block;
       padding: 0 5px; }
       header#header ul.icons li a.icon {
-        font-family: fontAwesome;
         font-size: 1.2em;
         padding: 3px; }
         header#header ul.icons li a.icon span.label {
@@ -295,7 +296,7 @@ form#contact {
     font-size: 3em;
     line-height: .8em;
     font-family: "Rokkitt";
-    text-align: left; }
+    text-align: left !important; }
     @media (max-width: 500px) {
       .left h1.heading {
         font-size: 2.5em; } }
@@ -415,14 +416,14 @@ img + p.small {
     width: 50%; }
     #contact-block ul#social li {
       padding: 10px 0; }
-      #contact-block ul#social li i {
-        padding-right: 10px;
-        font-size: 1.3em; }
       #contact-block ul#social li a {
-        border: none; }
+        border: none;
+        font-size: 1.3em; }
         #contact-block ul#social li a:hover {
           background: transparent;
           color: #000; }
+        #contact-block ul#social li a span.label {
+          padding-left: 10px; }
   #contact-block .right {
     width: 50%; }
 
