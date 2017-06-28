@@ -104,6 +104,12 @@ img + p.small {
 }
 
 #conference {
+  h1 {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
   ul.big-events-list {
     li {
       display: inline-block;

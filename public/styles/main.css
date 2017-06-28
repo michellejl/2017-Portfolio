@@ -41,13 +41,14 @@ p.intro-center {
   font-size: 1.2em;
   text-align: center;
   font-style: italic; }
-p.center {
-  text-align: center; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab";
   margin: 0;
   padding: 0; }
+
+.center {
+  text-align: center; }
 
 /* GLOBAL */
 * {
@@ -350,6 +351,10 @@ img + p.small {
 #volunteer .image {
   padding-left: 15px; }
 
+#conference h1 {
+  margin-bottom: 0; }
+#conference h2 {
+  margin-bottom: 25px; }
 #conference ul.big-events-list li {
   display: inline-block;
   flex: 1 1 50%;
