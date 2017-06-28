@@ -1,7 +1,8 @@
 const   express = require('express'),
         path = require('path'),
         bodyParser = require('body-parser'),
-        nodemailer = require('nodemailer');
+        nodemailer = require('nodemailer'),
+        favicon = require('serve-favicon');
 
 let app = express();
 
@@ -9,6 +10,8 @@ app.set('views', path.join(__dirname, 'views'))
     .set('view engine', 'pug');
 
 // Middleware ======================================================================
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 app.use(bodyParser.json())
     .use(bodyParser.urlencoded({extended: false}))
     .use(express.static(path.join(__dirname, 'public')))
