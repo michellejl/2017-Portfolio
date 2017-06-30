@@ -137,3 +137,9 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+# .eslintrc things
+=2.2.0
+=3.0.0
+=3.5.0
+=3.19.0
+=4.2.2
