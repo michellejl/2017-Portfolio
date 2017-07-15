@@ -117,6 +117,12 @@ img + p.small {
       padding: 10px 0;
 
       @media (max-width: 775px) { flex: 1 1 100%; }
+
+      .title {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
       &.conference {
         &:before {
           font-family: FontAwesome;

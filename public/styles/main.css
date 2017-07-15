@@ -19,7 +19,8 @@ a {
 #main a {
   border-bottom: 2px solid #950147;
   color: #000;
-  padding: 0 3px; }
+  padding: 0 3px;
+  margin-left: 2px; }
   #main a:hover {
     color: #fff; }
   #main a.btn.cta {
@@ -362,6 +363,9 @@ img + p.small {
   @media (max-width: 775px) {
     #conference ul.big-events-list li {
       flex: 1 1 100%; } }
+  #conference ul.big-events-list li .title {
+    display: inline-block;
+    margin-bottom: 5px; }
   #conference ul.big-events-list li.conference:before {
     font-family: FontAwesome;
     content: '\f0c0';
