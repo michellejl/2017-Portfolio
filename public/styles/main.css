@@ -169,6 +169,9 @@ aside#sidebar {
       background-position: right;
       transition: 0.4s; }
 
+a.noStyle {
+  background: none; }
+
 .nav-trigger {
   position: absolute;
   clip: rect(0, 0, 0, 0); }
@@ -359,7 +362,10 @@ img + p.small {
 #conference ul.big-events-list li {
   display: inline-block;
   flex: 1 1 50%;
-  padding: 10px 0; }
+  padding: 10px 0;
+  /* Tooltip container */
+  /* Tooltip text */
+  /* Show the tooltip text when you mouse over the tooltip container */ }
   @media (max-width: 775px) {
     #conference ul.big-events-list li {
       flex: 1 1 100%; } }
@@ -378,8 +384,43 @@ img + p.small {
     display: inline-block; }
   #conference ul.big-events-list li span.title {
     font-weight: bold; }
-  #conference ul.big-events-list li span.date, #conference ul.big-events-list li span.location {
+  #conference ul.big-events-list li span.date, #conference ul.big-events-list li span.location, #conference ul.big-events-list li span.extra {
     display: block; }
+  #conference ul.big-events-list li span.date, #conference ul.big-events-list li span.location {
+    padding-left: 30px; }
+  #conference ul.big-events-list li span .fa-trophy {
+    color: #FAA810;
+    padding: 0 10px; }
+  #conference ul.big-events-list li .tooltip {
+    position: relative;
+    display: inline-block; }
+  #conference ul.big-events-list li .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FAA810;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    margin-left: 5px;
+    border-radius: 6px;
+    font-weight: normal;
+    /* Position the tooltip text*/
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    z-index: 1; }
+  #conference ul.big-events-list li .tooltip:hover .tooltiptext {
+    visibility: visible; }
+  #conference ul.big-events-list li .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #FAA810 transparent transparent; }
 
 .image {
   width: 40%; }

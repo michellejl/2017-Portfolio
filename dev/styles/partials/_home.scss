@@ -144,9 +144,58 @@ img + p.small {
           font-weight: bold;
         }
         &.date,
-        &.location {
+        &.location,
+        &.extra {
           display: block;
         }
+        &.date,
+        &.location {
+          padding-left: 30px;
+        }
+        .fa-trophy {
+          color: $trophy;
+          padding: 0 10px;
+        }
+      }
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: $trophy;
+        color: #000;
+        text-align: center;
+        padding: 5px 0;
+        margin-left: 5px;
+        border-radius: 6px;
+        font-weight: normal;
+
+        /* Position the tooltip text*/
+        position: absolute;
+        top: -5px;
+        left: 105%;
+        z-index: 1;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: 100%; /* To the left of the tooltip */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent $trophy transparent transparent;
       }
     }
   }
