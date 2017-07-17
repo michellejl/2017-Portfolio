@@ -143,3 +143,6 @@ fabric.properties
 =3.5.0
 =3.19.0
 =4.2.2
+
+# style maps
+*.css.map

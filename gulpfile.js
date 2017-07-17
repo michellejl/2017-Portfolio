@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
+const autoprefixer = require('gulp-autoprefixer')
 
 let input = ['./dev/styles/*.scss', 'dev/styles/partials/*.scss']
 let output = './public/styles'
@@ -15,7 +16,8 @@ gulp.task('sass', function () {
     .src(input)
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(sourcemaps.write('./maps'))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('/'))
     .pipe(gulp.dest(output))
 })
 
