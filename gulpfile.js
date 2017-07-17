@@ -3,15 +3,15 @@ const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
 const autoprefixer = require('gulp-autoprefixer')
 
+// Styles Variables
 let input = ['./dev/styles/*.scss', 'dev/styles/partials/*.scss']
 let output = './public/styles'
-
 let sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
 }
 
-gulp.task('sass', function () {
+gulp.task('styles', function () {
   return gulp
     .src(input)
     .pipe(sourcemaps.init())
@@ -21,4 +21,16 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(output))
 })
 
-gulp.task('default', ['sass'])
+// Optional task for using Sass Docs
+/*
+const sassdoc = require('sassdoc')
+gulp.task('sassdoc', function () {
+  return gulp
+    .src(input)
+    .pipe(sassdoc())
+    .resume()
+})
+*/
+
+// Default Gulp Task
+gulp.task('default', ['styles'])
