@@ -32,5 +32,15 @@ gulp.task('sassdoc', function () {
 })
 */
 
+gulp.task('watch', function () {
+  return gulp
+  // Watch the input folder for change, and run `sass` task when something happens
+    .watch(input, ['styles'])
+    // When there is a change, log a message in the console
+    .on('change', function (event) {
+      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...')
+    })
+})
+
 // Default Gulp Task
-gulp.task('default', ['styles'])
+gulp.task('default', ['styles', 'watch'])
