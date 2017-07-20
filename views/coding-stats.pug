@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1 Coding Stats
+  p Graphs and charts generated from my wakatime account that tracks my coding time
+  figure
+    embed(src="https://wakatime.com/share/@e3514912-da6f-447d-b15b-c97b76c3081b/27d4f949-dbcc-4f21-a95d-22855030b90d.svg")
+  figure
+    embed(src="https://wakatime.com/share/@e3514912-da6f-447d-b15b-c97b76c3081b/9101db76-cdd1-4900-974d-493dbd1b9755.svg")
+  figure
+    embed(src="https://wakatime.com/share/@e3514912-da6f-447d-b15b-c97b76c3081b/97c30bcb-ada8-4351-8fe5-83f0ddfe12fb.svg")
+
+  h1 GitHub Contributions
+  p Contribution graph from github. Script by
+    a(href="https://github.com/IonicaBizau/github-calendar" target="_blank") IonicaBizau
+  // Include github-calendar library
+  script(src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js")
+  link(rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css")
+  div.calendar(style="margin-bottom: 50px;") Loading the data just for you.
+  script
+    | GitHubCalendar(".calendar", "michellejl");
+
+  p Languages I use according to Github. Script by
+    a(href="https://github.com/IonicaBizau/github-profile-languages" target="_blank") IonicaBizau
+  iframe(width="750" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?@michellejl" frameborder="0")
+
+
+
+
+
+
+
