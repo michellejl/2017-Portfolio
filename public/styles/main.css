@@ -385,7 +385,7 @@ form#contact input[type=button] {
 
 #content {
   width: 80%;
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -471,7 +471,7 @@ form#contact input[type=button] {
       -ms-flex: 1 1 35%;
           flex: 1 1 35%;
   background-size: cover;
-  background-position: right center;
+  background-position: top center;
   border-radius: 5px;
 }
 

@@ -21,5 +21,9 @@ router.get('/resume', (req, res) => {
   res.render('resume', {title: 'Resume'})
 })
 
-module.exports = router
+/* GET Coding Stats Page */
+router.get('/coding-stats', (req, res) => {
+  res.render('coding-stats', {title: 'Coding Stats'})
+})
 
+module.exports = router
