@@ -1,8 +1,8 @@
-aside#sidebar
-  a.noStyle(href="/")
+aside#main-navigation
+  a(href="/")
     img.logo(src="/images/logo.png", class="logo")
   nav
-    ul
+    ul.menu
       a(href="/")
         li Home
       a(href="/blog")
@@ -15,4 +15,4 @@ aside#sidebar
         li Contact
 input#nav-trigger.nav-trigger(type="checkbox")
 label(for="nav-trigger") 
-  i.fa.fa-bars(aria-hidden="true") 
+  span.icon

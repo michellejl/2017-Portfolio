@@ -1,70 +1,76 @@
-$headers: 'Roboto Slab';
-$body: 'Roboto';
+$main: 'Roboto';
 $accent: 'Rokkitt';
+$fa: 'fontAwesome';
 * {
-  font-family: $body;
+  font-family: $main;
 }
-
-
-
+i, .icon {
+  font-family: $fa;
+  font-size: 1.2em;
+}
 a {
   text-decoration: none;
-  color: $color;
-  background: linear-gradient(white 50%, $color 50%);
-  background-size: 100% 200%;
-  background-position: top;
-
-  &:hover {
-    color: #fff;
-    background-position: bottom;
-    transition: 0.5s ;
-  }
-  &.icon { font-family: fontAwesome; }
-
 }
 
-#main a {
-  border-bottom: 2px solid $color;
-  color: #000;
-  padding: 0 3px;
-  margin-left: 2px;
-
-  &:hover { color: #fff; }
-
-  &.btn.cta {
-    padding       : 15px 30px;
-    font-size     : 1.2em;
-    border-radius : 10px;
-    border        : 2px solid $color;
-    color         : $color;
-    background    : transparent;
-    display       : block;
-    margin        : 0 auto;
-    width         : 200px;
-    text-align    : center;
-
-    &:hover {
-      background : $color;
-      color      : #FFFFFF;
-    }
-  }
-}
-
-
-p {
-  &.intro-center {
-    font-size: 1.2em;
-    text-align: center;
-    font-style: italic;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $headers;
-  margin: 0;
-  padding: 0;
-}
-
-.center {
-  text-align: center;
-}
+//
+//a {
+//  text-decoration: none;
+//  color: $color;
+//  background: linear-gradient(white 50%, $color 50%);
+//  background-size: 100% 200%;
+//  background-position: top;
+//
+//  &:hover {
+//    color: #fff;
+//    background-position: bottom;
+//    transition: 0.5s ;
+//  }
+//  &.icon { font-family: fontAwesome; }
+//
+//}
+//
+//#main a {
+//  border-bottom: 2px solid $color;
+//  color: #000;
+//  padding: 0 3px;
+//  margin-left: 2px;
+//
+//  &:hover { color: #fff; }
+//
+//  &.btn.cta {
+//    padding       : 15px 30px;
+//    font-size     : 1.2em;
+//    border-radius : 10px;
+//    border        : 2px solid $color;
+//    color         : $color;
+//    background    : transparent;
+//    display       : block;
+//    margin        : 0 auto;
+//    width         : 200px;
+//    text-align    : center;
+//
+//    &:hover {
+//      background : $color;
+//      color      : #FFFFFF;
+//    }
+//  }
+//}
+//
+//
+//p {
+//  &.intro-center {
+//    font-size: 1.2em;
+//    text-align: center;
+//    font-style: italic;
+//  }
+//}
+//
+//h1, h2, h3, h4, h5, h6 {
+//  font-family: $headers;
+//  margin: 0;
+//  padding: 0;
+//}
+//
+//.center {
+//  text-align: center;
+//}

@@ -1,0 +1,87 @@
+// Holds the full page minus the off-screen navigation
+#wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+  transition: left 0.8s;
+}
+
+// Off-screen navigation element
+#main-navigation {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: $dark_gray;
+
+  ul {
+    a {
+      &:nth-of-type(1) { color: $first; }
+      &:nth-of-type(2) { color: $second; }
+      &:nth-of-type(3) { color: $third; }
+      &:nth-of-type(4) { color: $fourth; }
+      &:nth-of-type(5) { color: $fifth; }
+    }
+    li {
+      padding: 15px 0;
+      margin: 10px 0;
+      text-align: center;
+      border: solid $silver;
+      border-width: 1px 0;
+    }
+  }
+
+}
+
+// Menu Button to open off-screen navigation
+#nav-trigger {
+  position: absolute;
+  clip: rect(0,0,0,0);
+
+  // Checked opens the menu
+  &:checked {
+    + label {
+      .icon {
+        &::after {
+          content: '\f00d'; // x(close) fa icon
+        }
+      }
+      &::after { content: 'Close'; }
+    }
+    ~ #wrapper {
+      left: 100vw;
+    }
+  }
+
+}
+
+// Closed version of menu button
+label[for="nav-trigger"] {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  cursor: pointer;
+  background: #fff;
+  padding: 5px;
+  color: $color;
+  border: 1px solid $color;
+  border-radius: 5px;
+
+  &::after { content: 'Menu'; }
+
+  .icon::after {
+    content: '\f0c9'; // menu-bar fa icon
+    margin-right: 10px;
+  }
+
+}

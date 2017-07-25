@@ -1,84 +1,95 @@
-/* COLORS */
+/*
+    Variables
+*/
+
+// Colors
 @import "partials/colors";
-/* TYPOGRAPHY */
+// Typography
 @import "partials/typography";
 
-
-/* GLOBAL */
-* {
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-button {
-  cursor: pointer;
-}
-#main {
-  min-height: 40vh;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-hr {
-  padding: 0;
-  margin: 0;
-}
+/*
+    Mixins
+*/
 
 
-/* HEADER */
-@import "partials/header";
+/*
+    Global Elements
+*/
 
-/* FOOTER */
-@import "partials/footer";
+// Images
+@import "partials/images";
 
-/* SIDEBAR */
-@import "partials/sidebar";
+// Lists
+@import "partials/lists";
 
-/* FORM */
-@import "partials/form";
+// Off Screen Navigation
+@import "partials/menu";
 
-#wrapper {
-  height: 100vh;
-  width: 100%;
-  transition: left 0.8s;
-  position: absolute;
-  top: 0;
-  bottom: 100%;
-  left: 0;
-  z-index: 1;
-  background: white;
-  overflow-y: auto;
-}
 
-#content {
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
 
-  @media (max-width: 500px) { width: 95%; }
-
-}
-
-/* HOME PAGE */
-@import "partials/home";
-
-/* PORTFOLIO PAGE */
-@import "partials/portfolio";
-
-/* CONTACT PAGE */
-@import "partials/contact";
-
-/* BLOG PAGE */
-@import "partials/blog";
+///* GLOBAL */
+//* {
+//  box-sizing: border-box;
+//}
+//
+//img {
+//  width: 100%;
+//  border-radius: 10px;
+//}
+//
+//body {
+//  margin: 0;
+//  padding: 0;
+//}
+//button {
+//  cursor: pointer;
+//}
+//#main {
+//  min-height: 40vh;
+//}
+//
+//ul {
+//  list-style-type: none;
+//  margin: 0;
+//  padding: 0;
+//}
+//
+//hr {
+//  padding: 0;
+//  margin: 0;
+//}
+//
+//
+///* HEADER */
+//@import "partials/header";
+//
+///* FOOTER */
+//@import "partials/footer";
+//
+///* SIDEBAR */
+//@import "partials/sidebar";
+//
+///* FORM */
+//@import "partials/form";
+//
+//
+//#content {
+//  width: 80%;
+//  max-width: 750px;
+//  margin: 0 auto;
+//
+//  @media (max-width: 500px) { width: 95%; }
+//
+//}
+//
+///* HOME PAGE */
+//@import "partials/home";
+//
+///* PORTFOLIO PAGE */
+//@import "partials/portfolio";
+//
+///* CONTACT PAGE */
+//@import "partials/contact";
+//
+///* BLOG PAGE */
+//@import "partials/blog";
