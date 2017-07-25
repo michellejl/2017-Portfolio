@@ -10,7 +10,7 @@
 /*
     Mixins
 */
-
+@import "partials/mixins";
 
 /*
     Global Elements
@@ -18,9 +18,6 @@
 
 // Images
 @import "partials/images";
-
-// Lists
-@import "partials/lists";
 
 // Off Screen Navigation
 @import "partials/menu";

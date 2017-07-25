@@ -21,11 +21,11 @@ html
 
 
   body
-    include partials/sidebar.pug
-    #wrapper
-      #content
+    include partials/off-screen-nav.pug
+    .wrapper
+      .wrapper__content
         include partials/header.pug
-        #main
+        .wrapper__main
           block content
         include partials/footer.pug
     
