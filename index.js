@@ -6,7 +6,7 @@ const favicon = require('serve-favicon')
 // Require route files
 const index = require('./routes/index') // Simple Routes
 const contact = require('./routes/contact') // Contact Form Routes
-const blog = require('./routes/blog')
+// const blog = require('./routes/blog')
 
 let app = express()
 
@@ -22,7 +22,7 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 // Routers =========================================================================
 app.use('/', index)
   .use('/contact', contact)
-  .use('/blog', blog)
+  // .use('/blog', blog)
 
 // Run the thing! Yay
 app.listen(8080)
